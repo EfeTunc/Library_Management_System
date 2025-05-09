@@ -11,10 +11,8 @@ public class AdminView extends JFrame {
 
     private JPanel ViewAndManageUserPanel;
     private JPanel deleteUserPanel;
-
     private JPanel ViewAndManageBooksPanel;
     private JPanel ViewAllRecords;
-
 
     private JButton addBookButton;
     private JButton viewRecordButton;
@@ -22,6 +20,8 @@ public class AdminView extends JFrame {
     private JButton removeBookButton;
     private JButton updateBookButton;
     private JButton viewUserButton;
+
+
 
     public JButton getDeleteBookSearch() {
         return deleteBookSearch;
@@ -40,9 +40,6 @@ public class AdminView extends JFrame {
     }
 
     private JButton removeUserButton;
-
-
-
     private JButton exitButton;
     private JButton backButton5;
     private JTextField addISBN;
@@ -59,7 +56,6 @@ public class AdminView extends JFrame {
 
     private JButton returnToAdminMenuButton;
     private JTextField textField11;
-
     private JTextArea viewUserArea;
     private JButton deleteItButton;
     private JButton backButton6;
@@ -121,7 +117,8 @@ public class AdminView extends JFrame {
     private JTextField recordsISBNField;
     private JTextField allBooksNameField;
     private JCheckBox allRecordsOverDueBox;
-    private JTextField textField1;
+    private JTextField viewandmanageuserField;
+    private JButton deleteButton;
 
 
     public AdminView() {
@@ -137,9 +134,15 @@ public class AdminView extends JFrame {
         createTable2();
         createTable3();
 
+        getComboBox1().addItem("Fantasy");
+        getComboBox1().addItem("Sci-Fi");
+        getComboBox1().addItem("Children");
+        getComboBox1().addItem("History");
+        getComboBox1().addItem("Novel");
+        getComboBox1().addItem("Poem");
+        getComboBox1().addItem("Psychological");
 
     }
-
 
     public void switchToPanel(JPanel panel) {
         AdminPanel.removeAll();
@@ -147,8 +150,6 @@ public class AdminView extends JFrame {
         AdminPanel.repaint();
         AdminPanel.revalidate();
     }
-
-
 
 
     public void createTable1() {
@@ -192,6 +193,17 @@ public class AdminView extends JFrame {
         UserTable.setAutoCreateRowSorter(true);
     }
 
+    public JButton getDeleteButton() {
+        return deleteButton;
+    }
+
+    public JTextField getViewandmanageuserField() {
+        return viewandmanageuserField;
+    }
+
+    public void setViewandmanageuserField(JTextField viewandmanageuserField) {
+        this.viewandmanageuserField = viewandmanageuserField;
+    }
 
     public JTextField getAllBooksISBNField() {
         return allBooksISBNField;
@@ -209,6 +221,9 @@ public class AdminView extends JFrame {
         this.allBooksSearchButton = allBooksSearchButton;
     }
 
+    public JTextField gettextField(){
+        return gettextField();
+    }
     public JTextField getRecordsSSNField() {
         return recordsSSNField;
     }
@@ -232,6 +247,7 @@ public class AdminView extends JFrame {
     public void setRecordsISBNField(JTextField recordsISBNField) {
         this.recordsISBNField = recordsISBNField;
     }
+
 
     public JTextField getAllBooksNameField() {
         return allBooksNameField;
@@ -679,6 +695,7 @@ public class AdminView extends JFrame {
         return comboBox2;
     }
 
+
     public void setComboBox2(JComboBox comboBox2) {
         this.comboBox2 = comboBox2;
     }
@@ -743,6 +760,9 @@ public class AdminView extends JFrame {
         return updateButton;
     }
 
+
+
+
     public void setUpdateButton(JButton updateButton) {
         this.updateButton = updateButton;
     }
@@ -782,6 +802,7 @@ public class AdminView extends JFrame {
     public JComboBox getComboBox1() {
         return comboBox1;
     }
+
 
     public void setComboBox1(JComboBox comboBox1) {
         this.comboBox1 = comboBox1;
