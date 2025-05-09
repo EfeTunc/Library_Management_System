@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca3deca-78d8-47b9-83cb-3cf0fadf4ae0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/AdminView.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/AdminView.java" afterDir="false" />
-    </list>
+    <list default="true" id="41063cdc-2ab7-4afb-99b6-0cc827529af5" name="Changes" comment="New Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,17 +23,17 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
   <component name="ProjectId" id="2waHYfgrGhwzOBNZHXp8k7m9siU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
@@ -50,17 +42,26 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "314",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/emira/OneDrive/Masaüstü/CS320 LMS/LMS",
-    "project.structure.last.edited": "Modules",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/emira/OneDrive/Masaüstü/CS320 LMS/LMS/Library_Management_System",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\src\View" />
+      <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\Library_Management_System" />
+      <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\Library_Management_System\src" />
+      <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\lib" />
+      <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\Library_Management_System\src\View" />
+      <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\Library_Management_System\src\Controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\Library_Management_System" />
+      <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\lib" />
+      <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\Library_Management_System\src\Model" />
     </key>
   </component>
   <component name="RunManager">
@@ -80,12 +81,69 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4ca3deca-78d8-47b9-83cb-3cf0fadf4ae0" name="Changes" comment="" />
+      <changelist id="41063cdc-2ab7-4afb-99b6-0cc827529af5" name="Changes" comment="" />
       <created>1746272815237</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746272815237</updated>
     </task>
+    <task id="LOCAL-00001" summary="Admin Model">
+      <created>1746452644975</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746452644975</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Admin Model">
+      <created>1746452722977</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746452722977</updated>
+    </task>
+    <task id="LOCAL-00003" summary="DAO">
+      <created>1746452793283</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746452793283</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Guest Operations">
+      <created>1746650637014</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746650637014</updated>
+    </task>
+    <task id="LOCAL-00005" summary="New Commit">
+      <created>1746650803195</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746650803195</updated>
+    </task>
+    <task id="LOCAL-00006" summary="New Commit">
+      <created>1746651006470</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746651006470</updated>
+    </task>
+    <task id="LOCAL-00007" summary="New Commit">
+      <created>1746823802119</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746823802119</updated>
+    </task>
+    <task id="LOCAL-00008" summary="New Commit">
+      <created>1746824707640</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746824707641</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,16 +151,21 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="TEXT_FILTER_SETTINGS">
-                <TextFilterSettings>
-                  <option name="REGEX" value="true" />
-                </TextFilterSettings>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Admin Model" />
+    <MESSAGE value="DAO" />
+    <MESSAGE value="Guest Operations" />
+    <MESSAGE value="New Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
