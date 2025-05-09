@@ -30,7 +30,7 @@ public class LoginController {
             loginView.showMessage("Invalid User!");
         }
         else{
-            if (userType.equals("Admin")){
+            if (userType.equals("admin")){
                 loginView.showMessage("Login successful!");
                 loginView.dispose();
                 AdminView view = new AdminView();
@@ -38,7 +38,7 @@ public class LoginController {
                 new AdminController(view,model);
                 view.setVisible(true);
             }
-            if (userType.equals("Guest")){
+            if (userType.equals("guest")){
                 loginView.showMessage("Login successful!");
                 loginView.dispose();
                 GuestView guestView = new GuestView();
