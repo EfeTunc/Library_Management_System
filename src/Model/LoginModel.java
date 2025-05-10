@@ -19,7 +19,7 @@ public class LoginModel {
             stmt.setString(2,hashed_pass);
             ResultSet rs = stmt.executeQuery();
             if (rs.next() && rs.getBoolean(1)){
-                int SSN = rs.getInt("SSN");
+                String SSN = rs.getString("SSN");
                 String userName = rs.getString("userName");
                 String userSurname = rs.getString("userSurname");
                 String userPassword = rs.getString("userPassword");

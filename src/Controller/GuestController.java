@@ -256,7 +256,7 @@ public class GuestController {
                 int row = guestView.getSearchAndFilterBooks().getSelectedRow();
                 try {
                     String ISBN = guestView.getSearchAndFilterBooks().getModel().getValueAt(row,column).toString();
-                    int SSN = LoginModel.user.getSSN();
+                    String  SSN = LoginModel.user.getSSN();
                     Reservation reservation = new Reservation(ISBN,SSN,LocalDate.now(),LocalDate.now().plusDays(30),"Not Returned");
                     int returned = guestModel.addReservation(reservation);
                     if (returned == 1) {

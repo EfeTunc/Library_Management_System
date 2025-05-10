@@ -28,6 +28,17 @@ public class AdminController {
         this.adminView = adminView;
         this.adminModel = adminModel;
 
+        this.adminView.getExitButton().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                LoginView loginView = new LoginView();
+                LoginModel loginModel = new LoginModel();
+                new LoginController(loginModel,loginView);
+                adminView.dispose();
+                loginView.setVisible(true);
+            }
+        });
+
         this.adminView.getBackButton().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -302,7 +313,7 @@ public class AdminController {
                 List<User> userList = adminModel.allUsers(ssn,name,checked);
                 try {
                     for (User user : userList){
-                        String SSN = user.getUserSSN();
+                        String SSN = String.valueOf(user.getSSN());
                         String Name = user.getUserName();
                         String Surname = user.getUserSurname();
                         String Email = user.getUserEmail();

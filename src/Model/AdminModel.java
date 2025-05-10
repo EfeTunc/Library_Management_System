@@ -51,7 +51,7 @@ public class AdminModel {
                         String query = "INSERT INTO users(SSN, userName, userSurname, userPassword, userEmail, role , status) VALUES (?, ?, ?, ?, ? ,? ,?);";
 
                         PreparedStatement updateStmt = connection.prepareStatement(query);
-                        updateStmt.setString(1, user.getUserSSN());
+                        updateStmt.setString(1, user.getSSN());
                         updateStmt.setString(2, user.getUserName());
                         updateStmt.setString(3, user.getUserSurname());
                         updateStmt.setString(4, LoginModel.hashPassword(user.getUserPassword()));

@@ -8,9 +8,9 @@ public class Reservation {
 
     private String status;
 
-    public Reservation(String ISBN, int userSSN, LocalDate dateBorrowed, LocalDate dateDue,String status) {
+    public Reservation(String ISBN, String userSSN, LocalDate dateBorrowed, LocalDate dateDue, String status) {
         this.ISBN = ISBN;
-        this.userSSN = userSSN;
+        this.userSSN = Integer.parseInt(userSSN);
         this.dateBorrowed = dateBorrowed;
         this.dateDue = dateDue;
         this.status = status;

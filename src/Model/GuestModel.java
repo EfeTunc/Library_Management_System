@@ -139,7 +139,7 @@ public class GuestModel {
 
 
             PreparedStatement updateStmt = connection.prepareStatement(query);
-            updateStmt.setInt(1, LoginModel.user.getSSN());
+            updateStmt.setString(1, LoginModel.user.getSSN());
             updateStmt.setString(2,"Not Returned");
 
             ResultSet rs = updateStmt.executeQuery();
@@ -164,7 +164,7 @@ public class GuestModel {
 
 
             PreparedStatement updateStmt = connection.prepareStatement(query);
-            updateStmt.setInt(1, LoginModel.user.getSSN());
+            updateStmt.setString(1, LoginModel.user.getSSN());
 
 
             ResultSet rs = updateStmt.executeQuery();
@@ -189,7 +189,7 @@ public class GuestModel {
 
             PreparedStatement updateStmt = connection.prepareStatement(query);
             updateStmt.setString(1,pass);
-            updateStmt.setInt(2, LoginModel.user.getSSN());
+            updateStmt.setString(2, LoginModel.user.getSSN());
 
 
             int rs = updateStmt.executeUpdate();
