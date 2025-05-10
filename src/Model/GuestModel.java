@@ -100,10 +100,15 @@ public class GuestModel {
             return rs;
 
         } catch (Exception e) {
+            if(e.getMessage().charAt(20) == 'a'){
+                return -3;
+            }
+            if(e.getMessage().charAt(6) == '4'){
+                return -2;
+            }
             return -1;
 
         }
-
     }
 
     public int returnBook(String ID,String ISBN){

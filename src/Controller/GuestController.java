@@ -262,9 +262,12 @@ public class GuestController {
                     if (returned == 1) {
                         JOptionPane.showMessageDialog(null,"Successful");
                         guestView.getSearchAndFilterBooks().getModel().setValueAt("Not Available",row,7);
-                    }
-                    else if (returned == -1) {
+                    }else if (returned == -3) {
+                        JOptionPane.showMessageDialog(null,"This account is not active.");
+                    }else if (returned == -1) {
                         JOptionPane.showMessageDialog(null,"Already booked!");
+                    }else if (returned == -2) {
+                        JOptionPane.showMessageDialog(null,"Up to 4 books can be reserved.");
                     }
                 } catch (Exception ex) {
 

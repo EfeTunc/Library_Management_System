@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41063cdc-2ab7-4afb-99b6-0cc827529af5" name="Changes" comment="New Commit" />
+    <list default="true" id="41063cdc-2ab7-4afb-99b6-0cc827529af5" name="Changes" comment="Issues has been fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseConnection/JDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseConnection/JDBC.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,26 +18,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
-        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;KutayMumcu&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/EfeTunc/Library_Management_System.git&quot;,
-    &quot;accountId&quot;: &quot;3312da61-4fd9-435c-bb6d-724387f43b6f&quot;
-  }
-}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,67 +41,21 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.AdminModelTest.addBook.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminModelTest.addUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminModelTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in LMS.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.BookTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GuestModelTest.addReservation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GuestModelTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GuestModelTest.filter.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GuestModelTest.populateRecordsTable.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GuestModelTest.populateReturnTable.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GuestModelTest.returnBook.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GuestModelTest.search.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GuestModelTest.updatePassword.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCTest.connect.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginControllerTest.login.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginModelTest.auth.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginModelTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReservationRecordTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ReservationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReservationTest.getDateBorrowed.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReservationTest.getDateDue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReservationTest.getISBN.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReservationTest.getStatus.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE&quot;: &quot;right&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;107&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE&quot;: &quot;left&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;314&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kutay/IdeaProjects/Library_Management_System/lib/mockito-5.17.0/mockito-5.17.0&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/emira/OneDrive/Masaüstü/CS320 LMS/LMS/Library_Management_System&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
-    ]
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -127,113 +71,20 @@
       <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\lib" />
       <recent name="C:\Users\emira\OneDrive\Masaüstü\CS320 LMS\LMS\Library_Management_System\src\Model" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="View" />
-      <recent name="Model" />
-      <recent name="Controller" />
-      <recent name="DatabaseConnection" />
-      <recent name="" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest">
-    <configuration name="ReservationRecordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="LMS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.ReservationRecordTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReservationTest.getDateBorrowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LMS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.ReservationTest" />
-      <option name="METHOD_NAME" value="getDateBorrowed" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReservationTest.getISBN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LMS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.ReservationTest" />
-      <option name="METHOD_NAME" value="getISBN" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReservationTest.getStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LMS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.ReservationTest" />
-      <option name="METHOD_NAME" value="getStatus" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LMS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.ReservationRecordTest" />
-        <item itemvalue="JUnit.ReservationTest.getStatus" />
-        <item itemvalue="JUnit.ReservationTest.getISBN" />
-        <item itemvalue="JUnit.ReservationTest.getDateBorrowed" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -243,8 +94,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746272815237</updated>
-      <workItem from="1746887194969" duration="85000" />
-      <workItem from="1746887295527" duration="11136000" />
     </task>
     <task id="LOCAL-00001" summary="Admin Model">
       <created>1746452644975</created>
@@ -302,11 +151,32 @@
       <option name="project" value="LOCAL" />
       <updated>1746824707641</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Issues has been fixed">
+      <option name="closed" value="true" />
+      <created>1746880480355</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746880480355</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Issues has been fixed">
+      <option name="closed" value="true" />
+      <created>1746880528649</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746880528649</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Issues has been fixed">
+      <option name="closed" value="true" />
+      <created>1746882959099</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1746882959099</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -324,14 +194,11 @@
     <MESSAGE value="DAO" />
     <MESSAGE value="Guest Operations" />
     <MESSAGE value="New Commit" />
-    <MESSAGE value="admin controller added" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin controller added" />
+    <MESSAGE value="Issues has been fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Issues has been fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Library_Management_System$All_in_LMS.ic" NAME="All in LMS Coverage Results" MODIFIED="1746896641593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
