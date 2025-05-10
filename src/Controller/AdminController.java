@@ -52,8 +52,11 @@ public class AdminController {
         this.adminView.getBackButton2().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 adminView.switchToPanel(adminView.getMainPanel());
+                adminView.getAddUserSSN().setText("");
+                adminView.getAddUserName().setText("");
+                adminView.getAddUserSurname().setText("");
+                adminView.getAddUserMail().setText("");
             }
         });
         this.adminView.getBackButton3().addActionListener(new ActionListener() {
@@ -78,8 +81,12 @@ public class AdminController {
         this.adminView.getBackButton5().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 adminView.switchToPanel(adminView.getMainPanel());
+                adminView.getAddISBN().setText("");
+                adminView.getAddBookName().setText("");
+                adminView.getAddAuthor().setText("");
+                adminView.getAddPubDate().setText("");
+                adminView.getAddLocation().setText("");
             }
         });
 
@@ -205,7 +212,6 @@ public class AdminController {
             }
         });
 
-
         this.adminView.getHasOutstandingOverdueItemsCheckBox().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -218,19 +224,20 @@ public class AdminController {
             }
         });
 
-        this.adminView.getSearchUserManageButton().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                DefaultTableModel tableModel = (DefaultTableModel) adminView.getUserTable().getModel();
-                tableModel.setRowCount(0);
+        this.adminView.getSearchUserManageButton().addActionListener(e -> {
+            DefaultTableModel model = (DefaultTableModel) adminView.getUserTable().getModel();
+            model.setRowCount(0);
 
-                String ssn = adminView.getManageSSNField().getText().trim();
-                boolean onlyOverdue = adminView.getHasOutstandingOverdueItemsCheckBox().isSelected();
+            String ssn  = adminView.getManageSSNField().getText().trim();
+            String name = adminView.getViewandmanageuserField().getText().trim();
+            boolean overdue = adminView.getHasOutstandingOverdueItemsCheckBox().isSelected();
 
-                adminModel.populateUserWithFilter(adminView.getUserTable(), ssn, onlyOverdue);
-                adminView.getManageSSNField().setText("");
-            }
+            adminModel.populateUserWithFilter(adminView.getUserTable(), ssn, name, overdue);
+
+            adminView.getManageSSNField().setText("");
+            adminView.getViewandmanageuserField().setText("");
         });
+
 
 
         this.adminView.getUpdateButton().addActionListener(new ActionListener() {

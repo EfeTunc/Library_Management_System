@@ -338,82 +338,77 @@ public class AdminModel {
 
         }
 
-        public void populateUserWithFilter(JTable table, String ssn, boolean overdueOnly) {
+        public void populateUserWithFilter(JTable table, String ssn, String name, boolean overdueOnly) {
                 DefaultTableModel tableModel = (DefaultTableModel) table.getModel();
                 tableModel.setRowCount(0);
 
                 try {
                         Connection conn = JDBC.connect();
-                        String query;
+                        StringBuilder query = new StringBuilder();
 
                         if (overdueOnly) {
-                                query = "SELECT DISTINCT u.SSN, u.userName, u.userSurname, u.userEmail, u.status, r.dateBorrowed " +
-                                        "FROM users u " +
-                                        "JOIN reservations r ON u.SSN = r.SSN " +
-                                        "WHERE r.status = 'Not Returned' AND u.role = 'guest'";
+                                query.append("SELECT DISTINCT u.SSN, u.userName, u.userSurname, u.userEmail, u.status, r.dateBorrowed ")
+                                        .append("FROM users u JOIN reservations r ON u.SSN = r.SSN ")
+                                        .append("WHERE r.status = 'Not Returned' AND u.role = 'guest'");
+                        } else {
+                                query.append("SELECT * FROM users u WHERE u.role = 'guest'");
+                        }
 
-                                if (!ssn.isEmpty()) {
-                                        query += " AND u.SSN = ?";
+                        List<String> conditions = new ArrayList<>();
+                        List<Object> params = new ArrayList<>();
+
+                        if (!ssn.isEmpty()) {
+                                conditions.add("u.SSN = ?");
+                                params.add(ssn);
+                        }
+
+                        if (!name.isEmpty()) {
+                                conditions.add("(LOWER(u.userName) LIKE ? OR LOWER(u.userSurname) LIKE ?)");
+                                String likeName = "%" + name.toLowerCase() + "%";
+                                params.add(likeName);
+                                params.add(likeName);
+                        }
+
+                        if (!conditions.isEmpty()) {
+                                for (String cond : conditions) {
+                                        query.append(" AND ").append(cond);
                                 }
+                        }
 
-                                PreparedStatement ps = conn.prepareStatement(query);
+                        PreparedStatement ps = conn.prepareStatement(query.toString());
 
-                                if (!ssn.isEmpty()) {
-                                        ps.setString(1, ssn);
-                                }
+                        for (int i = 0; i < params.size(); i++) {
+                                ps.setObject(i + 1, params.get(i));
+                        }
 
-                                ResultSet rs = ps.executeQuery();
-                                java.sql.Date today = new java.sql.Date(System.currentTimeMillis());
+                        ResultSet rs = ps.executeQuery();
+                        java.sql.Date today = new java.sql.Date(System.currentTimeMillis());
 
-                                while (rs.next()) {
+                        while (rs.next()) {
+                                if (overdueOnly) {
                                         java.sql.Date borrowedDate = rs.getDate("dateBorrowed");
-
                                         Calendar cal = Calendar.getInstance();
                                         cal.setTime(borrowedDate);
                                         cal.add(Calendar.DAY_OF_MONTH, 30);
                                         java.sql.Date dueDate = new java.sql.Date(cal.getTimeInMillis());
-
-                                        if (dueDate.before(today)) {
-                                                String ssnVal = rs.getString("SSN");
-                                                String username = rs.getString("userName");
-                                                String surname = rs.getString("userSurname");
-                                                String mail = rs.getString("userEmail");
-                                                String status = rs.getString("status");
-
-                                                tableModel.addRow(new Object[]{ssnVal, username, surname, mail, status});
-                                        }
+                                        if (!dueDate.before(today)) continue; // only overdue
                                 }
 
-                        } else {
-                                query = "SELECT * FROM users WHERE role = 'guest'";
+                                String ssnVal = rs.getString("SSN");
+                                String username = rs.getString("userName");
+                                String surname = rs.getString("userSurname");
+                                String mail = rs.getString("userEmail");
+                                String status = rs.getString("status");
 
-                                if (!ssn.isEmpty()) {
-                                        query += " AND SSN = ?";
-                                }
-
-                                PreparedStatement ps = conn.prepareStatement(query);
-
-                                if (!ssn.isEmpty()) {
-                                        ps.setString(1, ssn);
-                                }
-
-                                ResultSet rs = ps.executeQuery();
-
-                                while (rs.next()) {
-                                        String ssnVal = rs.getString("SSN");
-                                        String username = rs.getString("userName");
-                                        String surname = rs.getString("userSurname");
-                                        String mail = rs.getString("userEmail");
-                                        String status = rs.getString("status");
-
-                                        tableModel.addRow(new Object[]{ssnVal, username, surname, mail, status});
-                                }
+                                tableModel.addRow(new Object[]{ssnVal, username, surname, mail, status});
                         }
 
                 } catch (Exception e) {
                         e.printStackTrace();
                 }
         }
+
+
 
 
 
