@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41063cdc-2ab7-4afb-99b6-0cc827529af5" name="Changes" comment="New Commit" />
+    <list default="true" id="41063cdc-2ab7-4afb-99b6-0cc827529af5" name="Changes" comment="New Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/GuestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/GuestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseConnection/JDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseConnection/JDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AdminModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AdminModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/GuestModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/GuestModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/LoginModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +35,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2waHYfgrGhwzOBNZHXp8k7m9siU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,6 +57,7 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "314",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "19",
     "last_opened_file_path": "C:/Users/emira/OneDrive/Masaüstü/CS320 LMS/LMS/Library_Management_System",
     "project.structure.last.edited": "Project",
