@@ -330,17 +330,5 @@ public class GuestController {
                 }
             }
         });
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

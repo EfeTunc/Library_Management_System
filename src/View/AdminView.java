@@ -972,9 +972,3 @@ public class AdminView extends JFrame {
         this.assignNewPriceButton = assignNewPriceButton;
     }
 }
-
-
-
-
-
-
