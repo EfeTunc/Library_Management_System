@@ -265,6 +265,10 @@ public class GuestController {
                     }
                     else if (returned == -1) {
                         JOptionPane.showMessageDialog(null,"Already booked!");
+                    }else if (returned == -2) {
+                        JOptionPane.showMessageDialog(null,"Up to 4 books can be reserved.");
+                    }else if (returned == -3) {
+                        JOptionPane.showMessageDialog(null,"This account is not active.");
                     }
                 } catch (Exception ex) {
 
