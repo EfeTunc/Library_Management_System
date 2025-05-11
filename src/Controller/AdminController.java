@@ -299,7 +299,7 @@ public class AdminController {
                         String genre = book.getGenre();
                         String publicationDate = book.getPublicationDate();
                         String language = book.getLanguage();
-                        String availability = (book.isAvailable()) ? "True" : "False";
+                        String availability = (book.isAvailable()) ? "Available" : "Not Available";
                         String location = book.getLocation();
 
                         tableModel.addRow(new Object[] {isbn,bookName,author,genre,location,language,publicationDate,availability});
