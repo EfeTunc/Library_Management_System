@@ -261,7 +261,7 @@ public class GuestController {
                     int returned = guestModel.addReservation(reservation);
                     if (returned == 1) {
                         JOptionPane.showMessageDialog(null,"Successful");
-                        guestView.getSearchAndFilterBooks().getModel().setValueAt("Not Available",row,7);
+                        guestView.getSearchAndFilterBooks().getModel().setValueAt("Booked",row,7);
                     }else if (returned == -3) {
                         JOptionPane.showMessageDialog(null,"This account is not active.");
                     }else if (returned == -1) {
