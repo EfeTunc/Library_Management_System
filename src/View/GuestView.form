@@ -249,13 +249,13 @@
             </constraints>
             <properties>
               <model>
-                <item value="Comedy"/>
-                <item value="Horror"/>
                 <item value="Fantasy"/>
-                <item value="Fiction"/>
-                <item value="Historical"/>
-                <item value="Mystery"/>
-                <item value="Pyschological"/>
+                <item value="Sci-Fi"/>
+                <item value="Children"/>
+                <item value="History"/>
+                <item value="Novel"/>
+                <item value="Poem"/>
+                <item value="Psychological"/>
               </model>
             </properties>
           </component>
