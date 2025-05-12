@@ -41,31 +41,38 @@ public class AdminModel {
                 }
 
         }
-        
 
 
-        public void addUser(User user){
+
+        public boolean addUser(User user) {
                 try {
                         Connection connection = JDBC.connect();
 
-                        String query = "INSERT INTO users(SSN, userName, userSurname, userPassword, userEmail, role , status) VALUES (?, ?, ?, ?, ? ,? ,?);";
+                        String checkQuery = "SELECT COUNT(*) FROM users WHERE SSN = ?";
+                        PreparedStatement checkStmt = connection.prepareStatement(checkQuery);
+                        checkStmt.setString(1, user.getSSN());
+                        ResultSet rs = checkStmt.executeQuery();
 
-                        PreparedStatement updateStmt = connection.prepareStatement(query);
-                        updateStmt.setString(1, user.getSSN());
-                        updateStmt.setString(2, user.getUserName());
-                        updateStmt.setString(3, user.getUserSurname());
-                        updateStmt.setString(4, LoginModel.hashPassword(user.getUserPassword()));
-                        updateStmt.setString(5, user.getUserEmail());
-                        updateStmt.setString(6,"guest");
-                        updateStmt.setString(7,user.getStatus());
+                        if (rs.next() && rs.getInt(1) > 0) {
+                                return false;
+                        }
 
-                        updateStmt.executeUpdate();
+                        String query = "INSERT INTO users(SSN, userName, userSurname, userPassword, userEmail, role, status) VALUES (?, ?, ?, ?, ?, ?, ?)";
+                        PreparedStatement insertStmt = connection.prepareStatement(query);
+                        insertStmt.setString(1, user.getSSN());
+                        insertStmt.setString(2, user.getUserName());
+                        insertStmt.setString(3, user.getUserSurname());
+                        insertStmt.setString(4, LoginModel.hashPassword(user.getUserPassword()));
+                        insertStmt.setString(5, user.getUserEmail());
+                        insertStmt.setString(6, "guest");
+                        insertStmt.setString(7, user.getStatus());
 
-                }
-                 catch (Exception e) {
+                        insertStmt.executeUpdate();
+                        return true;
+
+                } catch (Exception e) {
                         throw new RuntimeException(e);
                 }
-
         }
 
 

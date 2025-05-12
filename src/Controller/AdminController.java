@@ -130,13 +130,17 @@ public class AdminController {
                 String pass = password.toString();
 
                 User user = new User(SSN, userName, userSurname, pass, mail, "active");
-                adminModel.addUser(user);
-                JOptionPane.showMessageDialog(null, "User has been created!", "Successful", JOptionPane.INFORMATION_MESSAGE);
+                boolean success = adminModel.addUser(user);
+                if (success) {
+                    JOptionPane.showMessageDialog(null, "User has been created!", "Successful", JOptionPane.INFORMATION_MESSAGE);
 
-                adminView.getAddUserSSN().setText("");
-                adminView.getAddUserName().setText("");
-                adminView.getAddUserSurname().setText("");
-                adminView.getAddUserMail().setText("");
+                    adminView.getAddUserSSN().setText("");
+                    adminView.getAddUserName().setText("");
+                    adminView.getAddUserSurname().setText("");
+                    adminView.getAddUserMail().setText("");
+                } else {
+                    JOptionPane.showMessageDialog(null, "This user already exists!", "Error", JOptionPane.ERROR_MESSAGE);
+                }
             }
         });
 
